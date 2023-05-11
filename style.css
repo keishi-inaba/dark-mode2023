@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=M+PLUS+1+Code:wght@300&family=Mohave&family=Montserrat:wght@100&family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&family=Raleway:wght@100;200;300&family=Red+Hat+Mono:wght@300;400&family=Titillium+Web:wght@200&family=Ubuntu:ital,wght@1,300&display=swap');
+
+:root {
+  --white-color: #fff;
+  --dark-color: #000;
+}
+
+.dark-mode {
+  color: var(--white-color) !important;
+  background: var(--dark-color) !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  background: var(--white-color);
+  color: var(--dark-color);
+  transition: all .6s ease-in-out;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 70px;
+  padding: 50px 30px;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+main h1 {
+ font-size: 5rem;
+}
